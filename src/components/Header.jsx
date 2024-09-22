@@ -1,9 +1,11 @@
-import DarkModeToggle from "./DarkModeToggle";
+// import DarkModeToggle from "./DarkModeToggle";
+
+import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
   return (
     <div className="flex justify-between py-8 sm:py-12">
-      <h1 className="text-2xl font-semibold">AS</h1>
+      <h1 className="text-3xl text-primary font-semibold">AS</h1>
       <ul className="gap-5 hidden text-xl sm:flex">
         <a href="#project">
           {" "}
@@ -14,7 +16,8 @@ const Header = () => {
         <li>Skills</li>
         <li>Contact</li>
       </ul>
-      <DarkModeToggle />
+      <ThemeToggle />
+      {/* <DarkModeToggle /> */}
     </div>
   );
 };
