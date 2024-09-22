@@ -1,5 +1,6 @@
+import Contact from "./Contact";
 import Hero from "./Hero";
-import Project from "./Project";
+import Project from "./Projects";
 import Skill from "./Skill";
 
 const Body = () => {
@@ -8,6 +9,7 @@ const Body = () => {
       <Hero />
       <Project />
       <Skill />
+      <Contact />
     </>
   );
 };

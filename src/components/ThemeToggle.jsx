@@ -1,17 +1,16 @@
+import { MdKeyboardArrowDown } from "react-icons/md";
 const ThemeToggle = () => {
   return (
-    <div className="dropdown ">
-      <div tabIndex={0} role="button" className="btn btn-sm">
-        Theme
-        <svg
-          width="12px"
-          height="12px"
-          className="inline-block h-2 w-2 fill-current opacity-60"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 2048 2048"
-        >
-          <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
-        </svg>
+    <div className="dropdown">
+      <div
+        tabIndex={0}
+        role="button"
+        className="tooltip"
+        data-tip="Choose Themes"
+      >
+        <button className="btn btn-sm">
+          Themes <MdKeyboardArrowDown className="text-xl" />
+        </button>
       </div>
       <ul
         tabIndex={0}
@@ -31,8 +30,8 @@ const ThemeToggle = () => {
             type="radio"
             name="theme-dropdown"
             className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-            aria-label="Dark"
-            value="dark"
+            aria-label="Light"
+            value="light"
           />
         </li>
         <li>
