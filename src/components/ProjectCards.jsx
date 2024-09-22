@@ -1,23 +1,25 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import yumrun from "../assets/YumRun.png";
 import PropTypes from "prop-types";
-const ProjectCards = ({ name, description }) => {
+const ProjectCards = ({ name, description, image, techStack, github }) => {
   return (
-    <div className="card card-bordered w-full bg-base-100 md:w-80 shadow-xl my-5 mx-5 hover:scale-105 transition-all duration-300 ease-in">
-      <figure className="px-5 pt-10 ">
+    <div className="card card-bordered w-full lg:h-96 bg-base-100 lg:flex-row shadow-xl my-5 mx-5 hover:scale-95 transition-all duration-300 ease-in">
+      <figure className="px-2">
         <img
-          src={yumrun}
+          src={image}
           alt="YumRun"
-          className="rounded-xl hover:scale-110 transition-all duration-300 ease-in"
+          className="rounded-xl object-cover hover:scale-110 transition-all duration-300 ease-in"
         />
       </figure>
-      <div className="card-body items-center text-center">
-        <h2 className="card-title">{name}</h2>
-        <p>{description}</p>
+      <div className="card-body justify-center items-center text-center">
+        <h2 className="card-title text-primary text-3xl mt-5">{name}</h2>
+        <h3 className="md:w-4/5">{description}</h3>
+        <h4 className="text-primary pb-4">{techStack.join(" , ")}</h4>
         <div className="card-actions">
-          <button className="btn btn-circle">
-            <FaGithub />
-          </button>
+          <a href={github} target="_blank" rel="noopener noreferrer">
+            <button className="btn btn-circle">
+              <FaGithub />
+            </button>
+          </a>
           <button className="btn btn-circle">
             <FaExternalLinkAlt />
           </button>
@@ -29,5 +31,8 @@ const ProjectCards = ({ name, description }) => {
 ProjectCards.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  techStack: PropTypes.array.isRequired,
+  github: PropTypes.string.isRequired,
 };
 export default ProjectCards;
