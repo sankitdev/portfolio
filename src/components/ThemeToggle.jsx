@@ -30,8 +30,8 @@ const ThemeToggle = () => {
             type="radio"
             name="theme-dropdown"
             className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-            aria-label="Light"
-            value="light"
+            aria-label="Forest"
+            value="forest"
           />
         </li>
         <li>
@@ -59,15 +59,6 @@ const ThemeToggle = () => {
             className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
             aria-label="Cupcake"
             value="cupcake"
-          />
-        </li>
-        <li>
-          <input
-            type="radio"
-            name="theme-dropdown"
-            className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-            aria-label="Forest"
-            value="forest"
           />
         </li>
         <li>
