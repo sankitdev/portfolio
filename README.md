@@ -4,7 +4,7 @@ My first **minimal**, **customizable**, **blazingly fast**, and **SEO-friendly**
 
 ## Project Overview
 
-<img src="./mocup.png">
+<img src="./public/mockup.png">
 
 I have developed this portfolio website with **React**, **Tailwind CSS**, and **Daisy UI**. 🎨✨  
 Using **Vite** as a bundler, which is fast and helps with project setup. ⚡️
