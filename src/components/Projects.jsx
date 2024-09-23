@@ -6,7 +6,7 @@ const Project = () => {
       <h1 className="text-center text-4xl text-primary font-semibold">
         PROJECTS
       </h1>
-      <div className="flex justify-center items-center flex-wrap mt-2">
+      <div className="flex justify-center items-center flex-wrap mt-10">
         {projects.map((items) => (
           <ProjectCards
             key={items.name}

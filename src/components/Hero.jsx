@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect";
 const Hero = () => {
   const { name, role, description, resume, social } = about;
   return (
-    <div className="hero h-[calc(100vh-7rem)] sm:h-[calc(100vh-6rem)]">
+    <div className="hero min-h-[calc(100vh-4rem)] sm:min-h-[calc(100vh-6rem)]">
       <div className="hero-content text-center flex-col">
         <div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold py-2">
