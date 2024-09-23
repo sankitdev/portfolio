@@ -6,10 +6,13 @@ import ts from "./assets/ts.svg";
 import react from "./assets/react.svg";
 import next from "./assets/next.svg";
 import tailwind from "./assets/tailwind.svg";
-import node from "./assets/node js.svg";
 import express from "./assets/express.svg";
 import mongo from "./assets/mongo.svg";
+import vscode from "./assets/vscode.png";
+import git from "./assets/git.png";
+import redux from "./assets/redux-icon.png";
+import nodejs from "./assets/node js.svg";
 
-const Images = [html, css, js, ts, react, next, tailwind, node, express, mongo];
-
-export default Images;
+export const FrontEnd = [html, css, js, ts, react, next, tailwind, redux];
+export const BackEnd = [nodejs, express, mongo];
+export const Technology = [vscode, git];
