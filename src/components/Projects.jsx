@@ -2,7 +2,7 @@ import ProjectCards from "./ProjectCards";
 import { projects } from "../PortfolioData";
 const Project = () => {
   return (
-    <>
+    <div id="projects">
       <h1 className="text-center text-4xl text-primary font-semibold">
         PROJECTS
       </h1>
@@ -18,7 +18,7 @@ const Project = () => {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 export default Project;

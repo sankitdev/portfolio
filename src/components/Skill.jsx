@@ -6,7 +6,7 @@ const Skill = () => {
     setActiveTab(tab);
   };
   return (
-    <div className="text-center my-20">
+    <div className="text-center my-20" id="skills">
       <h1 className="text-4xl font-bold text-primary">Skills</h1>
       <div
         role="tablist"
@@ -41,7 +41,7 @@ const Skill = () => {
               key={index}
               src={items}
               alt=""
-              className="hover:scale-95 btn w-28 h-28 object-contain"
+              className="hover:scale-95 btn w-24 h-24 object-contain"
             />
           ))}
       </div>
@@ -52,7 +52,7 @@ const Skill = () => {
               key={index}
               src={items}
               alt=""
-              className="hover:scale-95 btn object-contain w-28 h-28"
+              className="hover:scale-95 btn object-contain w-24 h-24"
             />
           ))}
       </div>
@@ -63,7 +63,7 @@ const Skill = () => {
               key={index}
               src={items}
               alt=""
-              className="hover:scale-95 btn object-contain w-28 h-28"
+              className="hover:scale-95 btn object-contain w-24 h-24"
             />
           ))}
       </div>

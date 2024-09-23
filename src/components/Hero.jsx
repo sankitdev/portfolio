@@ -2,7 +2,6 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { about } from "../PortfolioData";
 import Typewriter from "typewriter-effect";
 
-// import test from "../assets/hero.jpg";
 const Hero = () => {
   const { name, role, description, resume, social } = about;
   return (
