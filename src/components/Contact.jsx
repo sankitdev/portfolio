@@ -5,10 +5,11 @@ const Contact = () => {
 
   return (
     <div className="text-center my-20" id="contact">
-      <h1 className="text-4xl font-bold mb-10 text-primary"> GET IN TOUCH </h1>
-      <p className="text-lg mb-2">Looking for a contact form?</p>
+      <h1 className="text-4xl font-bold mb-10 text-primary">Lets Connect!</h1>
+      <p className="text-lg mb-2">Need to get in touch?</p>
       <p className="text-lg mb-6">
-        🤔 Why waste time filling things out? Just click the button below! 📩
+        <span className="wave">👋</span> Say hello or drop a quick
+        message—whether its for a project, job opportunity, or just to chat! 🚀
       </p>
 
       <a
