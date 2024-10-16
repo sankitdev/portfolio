@@ -23,20 +23,29 @@ const Hero = () => {
           </h2>
           <p className="py-6 md:w-4/5 mx-auto sm:text-xl">{description}</p>
           <div className="flex justify-center items-center">
-            <button className="btn btn-outline btn-primary px-5">
-              <a href={resume} target="_blank" rel="noopener noreferrer">
-                Resume
-              </a>
-            </button>
-            <a href={social.github} target="_blank" rel="noopener noreferrer">
-              <button className="btn btn-outline mx-2 text-xl">
-                <FaGithub />
-              </button>
+            <a
+              href={resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline btn-primary px-5"
+            >
+              Resume
             </a>
-            <a href={social.linkedin} target="_blank" rel="noopener noreferrer">
-              <button className="btn btn-outline text-xl">
-                <FaLinkedin />
-              </button>
+            <a
+              href={social.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline mx-2 text-xl"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href={social.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline text-xl"
+            >
+              <FaLinkedin />
             </a>
           </div>
         </div>

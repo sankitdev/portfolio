@@ -1,6 +1,13 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import PropTypes from "prop-types";
-const ProjectCards = ({ name, description, image, techStack, github }) => {
+const ProjectCards = ({
+  name,
+  description,
+  image,
+  techStack,
+  github,
+  live,
+}) => {
   return (
     <div className="card card-bordered w-full lg:h-96 bg-base-100 lg:flex-row shadow-xl my-5 mx-5 hover:scale-95 transition-all duration-300 ease-in">
       <figure className="px-2">
@@ -20,9 +27,11 @@ const ProjectCards = ({ name, description, image, techStack, github }) => {
               <FaGithub />
             </button>
           </a>
-          <button className="btn btn-circle">
-            <FaExternalLinkAlt />
-          </button>
+          <a href={live} target="_blank" rel="noopener noreferrer">
+            <button className="btn btn-circle">
+              <FaExternalLinkAlt />
+            </button>
+          </a>
         </div>
       </div>
     </div>
@@ -34,5 +43,6 @@ ProjectCards.propTypes = {
   image: PropTypes.string.isRequired,
   techStack: PropTypes.array.isRequired,
   github: PropTypes.string.isRequired,
+  live: PropTypes.string.isRequired,
 };
 export default ProjectCards;

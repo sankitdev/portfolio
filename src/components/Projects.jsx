@@ -15,6 +15,7 @@ const Project = () => {
             techStack={items.stack}
             description={items.description}
             github={items.sourceCode}
+            live={items.livePreview}
           />
         ))}
       </div>
